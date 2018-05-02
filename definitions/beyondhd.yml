@@ -13,6 +13,7 @@
 
   caps:
     categories:
+      101: Movies/HD
       37: Movies/BluRay   # Movie / Blu-ray
       71: Movies/3D       # Movie / 3D
       83: Movies/3D       # FraMeSToR 3D
@@ -63,6 +64,9 @@
             args: cat
       title:
         selector: td:nth-child(4) a
+        filters:
+          - name: append
+            args: " - BEYONDHD"
       details:
         selector: td:nth-child(4) a
         attribute: href
